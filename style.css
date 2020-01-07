@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+
+  text-align: center;
+}
+
+#get-that-weather {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/61vchKWPDqL._SX355_.jpg");
+}
+
+.banner {
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  margin: 10px;
+}
+
+#app {
+  display: flex;
+}
+
+#weather-data {
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+}
+
+.zip-city-latlong {
+  font-size: 13px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.sunny {
+
+}
+
+.cloudy {
+  background-image: https://s3.envato.com/files/135987809/Image%20Preview.jpg;
+
+}
+
+.other-weather {
+
+
+}
