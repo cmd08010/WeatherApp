@@ -12,14 +12,14 @@ function fetchData(input) {
     const zipCodeData = axios.get(
       `api.openweathermap.org/data/2.5/weather?zip=${input}&APPID=${ApiKey}`
     )
-    return zipCodeData.catch(err => err)
+    return zipCodeData
   }
 
   if (typeof input === "string") {
     const cityNameData = axios.get(
       `http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=${ApiKey}`
     )
-    return cityNameData.catch(err => err)
+    return cityNameData
   }
 }
 
@@ -37,7 +37,7 @@ function renderHTML(weather) {
   const descData = weather.weather[0]
   const tempData = weather.main
   console.log(descData)
-  weatherDisplay.innerHTML = `<i class="owf owf-${descData.id} owf-5x"></i>
+  weatherDisplay.innerHTML = `
   <div class="Sky">
       <h5>Sky</h5>
       <p>${descData.description}</p>
