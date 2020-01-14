@@ -8,11 +8,17 @@ const ApiKey = "f13b434582160eb894cf5bec696ade75"
 let input
 
 function fetchData(input) {
-  if (typeof input === "number") {
-    const zipCodeData = axios.get(
-      `api.openweathermap.org/data/2.5/weather?zip=${input}&APPID=${ApiKey}`
-    )
+  if (typeof input === "number" && input.length === "5") {
+    const zipCodeData = axios
+      .get(
+        `api.openweathermap.org/data/2.5/weather?zip=${input}&APPID=${ApiKey}`
+      )
+      .catch(err => {
+        alert(err, "nope")
+      })
     return zipCodeData
+  } else {
+    console.log("nope")
   }
 
   if (typeof input === "string") {

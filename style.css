@@ -12,8 +12,14 @@ body {
 
 .banner {
   font-family: "Work Sans", sans-serif;
+  justify-content: center;
+  text-align: center;
   width: 100%;
   margin: 10px;
+  height: 8rem;
+  border: 5px;
+  background-image: url("https://openweathermap.org/themes/openweathermap/assets/img/new-history-forecast-bulk.png");
+  color: white;
 }
 
 #app {
